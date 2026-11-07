@@ -1,8 +1,8 @@
 
 import requests as r
-from bs4 import BeautifulSoup
 import pandas as pd
 import yfinance as yf
+from bs4 import BeautifulSoup
 
 def gme():
     url =  'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/stock.html'
