@@ -89,5 +89,5 @@ if __name__ == "__main__":
     finance_no_index_manipulation("GME")
     finance_index_rest("GME")
     print("------------")
-    # tesla()
-    # gme()
+    tesla()
+    gme()
