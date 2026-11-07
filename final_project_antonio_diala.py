@@ -22,13 +22,13 @@ def gme():
             rows.append(cols)
 
     # Construct the DataFrame
-    tesla_revenue = pd.DataFrame(rows, columns=["Date", "Revenue"])
-    tesla_revenue["Revenue"] = tesla_revenue['Revenue'].str.replace(',|\$',"",regex=True)
-    tesla_revenue.dropna(inplace=True)
+    gme_revenue = pd.DataFrame(rows, columns=["Date", "Revenue"])
+    gme_revenue["Revenue"] = gme_revenue['Revenue'].str.replace(',|\$',"",regex=True)
+    gme_revenue.dropna(inplace=True)
 
-    tesla_revenue = tesla_revenue[tesla_revenue['Revenue'] != ""]
+    gme_revenue = gme_revenue[gme_revenue['Revenue'] != ""]
 
-    print(tesla_revenue.tail())
+    print(gme_revenue.tail())
 
 
 def tesla():
